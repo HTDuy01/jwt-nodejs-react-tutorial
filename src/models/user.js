@@ -16,9 +16,9 @@ module.exports = (sequelize, DataTypes) => {
   
   // object relational mapping
   User.init({
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
-    email: DataTypes.STRING
+    email: DataTypes.STRING,
+    password: DataTypes.STRING,
+    username: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',
